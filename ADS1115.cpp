@@ -11,7 +11,7 @@ enum ads1115_register {
 	ADS1115_REGISTER_HIGH_THRESH = 3,
 };
 
-#define FACTOR 32768.0
+#define FACTOR 32767.0
 static float ranges[] = { 6.144 / FACTOR, 4.096 / FACTOR, 2.048 / FACTOR, 1.024 / FACTOR, 0.512 / FACTOR, 0.256 / FACTOR};
 
 ADS1115::ADS1115(uint8_t address)
